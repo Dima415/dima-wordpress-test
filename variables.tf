@@ -2,7 +2,7 @@
 variable "project_id" {
   description = "The GCP project ID"
   type        = string
-  default     = "devops-takehome-okundima"
+  default     = "<ENTER-PROJECT-NAME>"
 }
 
 variable "region" {
@@ -14,7 +14,7 @@ variable "region" {
 variable "cluster_name" {
   description = "The GKE cluster name"
   type        = string
-  default     = "dimas-wordpress-cluster"
+  default     = "wordpress-cluster"
 }
 variable "gke_num_nodes" {
   default     = 2
