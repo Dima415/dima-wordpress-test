@@ -1,6 +1,6 @@
 Welcome to my wordpress test code.
 
-This code will deply a gke cluster, a node-pool, and cloudsql.
+This code will deply a gke cluster, a node-pool
 
 Steps to deply the code:
 
