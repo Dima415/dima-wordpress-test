@@ -35,7 +35,7 @@ resource "google_container_node_pool" "primary_nodes" {
 
   version = data.google_container_engine_versions.gke_version.latest_node_version
   node_config {
-    preemptible  = false # Use preemptible VMs for cost savings
+    preemptible  = false
     machine_type = var.node_type
     oauth_scopes = [
       "https://www.googleapis.com/auth/cloud-platform",
