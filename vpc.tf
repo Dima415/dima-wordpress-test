@@ -15,7 +15,7 @@ resource "google_compute_subnetwork" "subnet" {
   ipv6_access_type         = "EXTERNAL"
   private_ip_google_access = var.enable_private_google_access
   secondary_ip_range {
-    range_name    = "services-range" #e.g datastores
+    range_name    = "services-range" #e.g LoadBalancers, ClusterIP, etc
     ip_cidr_range = "192.168.0.0/24"
   }
 
